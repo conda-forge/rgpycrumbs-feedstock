@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: rgpycrumbs
-  version: "1.10.8"
+  version: "1.10.10"
 
 package:
   name: ${{ name|lower }}
@@ -10,11 +10,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/rgpycrumbs/rgpycrumbs-${{ version }}.tar.gz
-  sha256: aeb4b01a5a9f9611ea457c265f50ccf01d8557fc8a8820c8206958caae5dee64
+  sha256: 13c538266656f01981a24a192527522da56f9df08b5536b02c85dc7ed1af7cf1
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
